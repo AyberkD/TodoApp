@@ -16,6 +16,7 @@
 		5A5FAA0B253F4BFF00AA7710 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A5FAA09253F4BFF00AA7710 /* LaunchScreen.storyboard */; };
 		5A5FAA14253F4C4800AA7710 /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5FAA13253F4C4800AA7710 /* TodoViewModel.swift */; };
 		5A5FAA18253F531F00AA7710 /* CreateTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5FAA17253F531F00AA7710 /* CreateTodoViewController.swift */; };
+		5AA85EC82540BCF300DBB81C /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA85EC72540BCF300DBB81C /* View+Extensions.swift */; };
 		5AD83544253F58FE00F8D5EE /* UpdateTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD83543253F58FE00F8D5EE /* UpdateTodoViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		5A5FAA0C253F4BFF00AA7710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A5FAA13253F4C4800AA7710 /* TodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewModel.swift; sourceTree = "<group>"; };
 		5A5FAA17253F531F00AA7710 /* CreateTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTodoViewController.swift; sourceTree = "<group>"; };
+		5AA85EC72540BCF300DBB81C /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		5AD83543253F58FE00F8D5EE /* UpdateTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTodoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,19 +66,44 @@
 		5A5FA9FA253F4BFE00AA7710 /* TodoApp */ = {
 			isa = PBXGroup;
 			children = (
+				5AA85EC62540BCE100DBB81C /* View Extensions */,
+				5AD83547253F5ED800F8D5EE /* View Model */,
+				5AD83546253F5ED100F8D5EE /* View Controllers */,
 				5A5FA9FB253F4BFE00AA7710 /* AppDelegate.swift */,
 				5A5FA9FD253F4BFE00AA7710 /* SceneDelegate.swift */,
-				5A5FA9FF253F4BFE00AA7710 /* TodoViewController.swift */,
 				5A5FAA01253F4BFE00AA7710 /* Main.storyboard */,
 				5A5FAA07253F4BFF00AA7710 /* Assets.xcassets */,
 				5A5FAA09253F4BFF00AA7710 /* LaunchScreen.storyboard */,
 				5A5FAA0C253F4BFF00AA7710 /* Info.plist */,
 				5A5FAA04253F4BFE00AA7710 /* TodoApp.xcdatamodeld */,
-				5A5FAA13253F4C4800AA7710 /* TodoViewModel.swift */,
-				5A5FAA17253F531F00AA7710 /* CreateTodoViewController.swift */,
-				5AD83543253F58FE00F8D5EE /* UpdateTodoViewController.swift */,
 			);
 			path = TodoApp;
+			sourceTree = "<group>";
+		};
+		5AA85EC62540BCE100DBB81C /* View Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5AA85EC72540BCF300DBB81C /* View+Extensions.swift */,
+			);
+			path = "View Extensions";
+			sourceTree = "<group>";
+		};
+		5AD83546253F5ED100F8D5EE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5A5FAA17253F531F00AA7710 /* CreateTodoViewController.swift */,
+				5AD83543253F58FE00F8D5EE /* UpdateTodoViewController.swift */,
+				5A5FA9FF253F4BFE00AA7710 /* TodoViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		5AD83547253F5ED800F8D5EE /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				5A5FAA13253F4C4800AA7710 /* TodoViewModel.swift */,
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +182,7 @@
 				5A5FA9FE253F4BFE00AA7710 /* SceneDelegate.swift in Sources */,
 				5A5FAA14253F4C4800AA7710 /* TodoViewModel.swift in Sources */,
 				5AD83544253F58FE00F8D5EE /* UpdateTodoViewController.swift in Sources */,
+				5AA85EC82540BCF300DBB81C /* View+Extensions.swift in Sources */,
 				5A5FAA06253F4BFE00AA7710 /* TodoApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,7 +340,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ayberk.TodoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -331,7 +359,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ayberk.TodoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
